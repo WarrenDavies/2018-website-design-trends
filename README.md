@@ -1,2 +1,2 @@
 # 2018-website-design-trends
-2018 website design trend templates
+A collection of templates for we design styles commonly used in 2018
