@@ -1,0 +1,24 @@
+.big-number {
+	display: block;
+	position: relative;
+	margin: 0px auto;
+	width: 100%;
+	height: 300px;
+}
+
+.big-number__color-box {
+	height: 190px;
+	width: 200px;
+	margin: 0px auto;
+	background-color: #FFEF00;
+}
+
+.big-number__number {
+	position: absolute;
+	top: 20px;
+	width: 100%;
+	font-family: Helvetica;
+	font-size: 250px;
+	text-align: center;
+	font-weight: bold;
+}
