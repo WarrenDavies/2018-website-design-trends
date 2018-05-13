@@ -1,3 +1,12 @@
+h1 {
+	font-family: Palatino;
+	font-size: 38px;
+	font-weight: normal;
+	text-align: center;
+	font-style: italic;
+	margin: 100px 0px;
+}
+
 .big-number {
 	display: block;
 	position: relative;
@@ -7,10 +16,11 @@
 }
 
 .big-number__color-box {
-	height: 190px;
-	width: 200px;
-	margin: 0px auto;
+	height: 150px;
+	width: 150px;
+	margin: 10px auto 50px auto;
 	background-color: #FFEF00;
+	
 }
 
 .big-number__number {
@@ -18,7 +28,7 @@
 	top: 20px;
 	width: 100%;
 	font-family: Helvetica;
-	font-size: 250px;
+	font-size: 180px;
 	text-align: center;
 	font-weight: bold;
 }
