@@ -1,4 +1,17 @@
+body {
+	font-family: Helvetica;
+}
+
 h1 {
+	font-family: Palatino;
+	font-size: 68px;
+	font-weight: normal;
+	text-align: center;
+	font-style: italic;
+	margin: 100px 0px;
+}
+
+h2 {
 	font-family: Palatino;
 	font-size: 38px;
 	font-weight: normal;
@@ -10,9 +23,9 @@ h1 {
 .big-number {
 	display: block;
 	position: relative;
-	margin: 0px auto;
+	margin: 100px auto 100px auto;
 	width: 100%;
-	height: 300px;
+	height: 200px;
 }
 
 .big-number__color-box {
@@ -31,4 +44,53 @@ h1 {
 	font-size: 180px;
 	text-align: center;
 	font-weight: bold;
+}
+
+.wide-box {
+	display: flex;
+	width: 100%;
+	margin: 0px auto;
+	height: 200px;
+	align-items: center;
+}
+
+.color-box {
+	display: flex;
+	align-items: center;
+	width: 50%;
+	background-color: #FFF;
+	color: #000;
+	font-size: 50px;
+	text-align: center;
+}
+
+.color-box-text {
+	text-align: center;
+	width: 100%;
+	padding: 10px;
+}
+
+.color-box--blue {
+	background-color: #00CCBB;
+	color: #fff;
+}
+
+.color-box--black {
+	background-color: #000;
+	color: #fff;
+}
+
+.gradient {
+	height: 400px;
+	flex-direction: column;
+	justify-content: space-evenly;
+	background: linear-gradient(to bottom right, #ff1493, #BF00FF);
+}
+
+.gradient-box-text {
+	text-align: center;
+	width: 100%;
+	padding: 10px;
+	font-size: 50px;
+	color: white;
 }
