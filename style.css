@@ -149,3 +149,44 @@ h2 {
 	width: 23%;
 	left: 35%;
 }
+
+.wide-box--center {
+	width: 90%;
+	max-width: 800px;
+	height: auto;
+	position: relative;
+}
+
+.camden {
+	width: 95%;
+	max-width: 800px;
+	padding-bottom: 28%;
+	height: 250px;
+	background-image: url("camden.jpg");
+	background-size: cover;
+}
+
+.image-wrapper {
+	position: absolute;
+	top: 0;
+	left: 0;
+	padding: 2%;
+	width: 96%;
+	height: 96%;
+	display: flex;
+	text-align: center;
+	flex-flow: column;
+	flex-wrap: nowrap;
+	align-items: center;
+	justify-content: space-evenly;
+	flex-wrap: wrap;	
+}
+
+.camden p {
+	text-align: center;
+	color: black;
+	font-size: 50px;
+	font-weight: bold;
+	align-self: center;
+	vertical-align: baseline;
+}
