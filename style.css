@@ -158,11 +158,11 @@ h2 {
 }
 
 .camden {
-	width: 95%;
-	max-width: 800px;
+	width: 100%;
+	max-width: 1300px;
 	padding-bottom: 28%;
 	height: 250px;
-	background-image: url("camden.jpg");
+	background-image: url("london2.png");
 	background-size: cover;
 }
 
@@ -184,7 +184,7 @@ h2 {
 
 .camden p {
 	text-align: center;
-	color: black;
+	color: #fff;
 	font-size: 50px;
 	font-weight: bold;
 	align-self: center;
