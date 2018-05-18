@@ -50,7 +50,7 @@ h2 {
 	display: flex;
 	width: 100%;
 	margin: 0px auto;
-	height: 200px;
+	height: 600px;
 	align-items: center;
 }
 
@@ -58,6 +58,7 @@ h2 {
 	display: flex;
 	align-items: center;
 	width: 50%;
+	height: 100%;
 	background-color: #FFF;
 	color: #000;
 	font-size: 50px;
@@ -78,7 +79,6 @@ h2 {
 .color-box--black {
 	background-color: #000;
 	color: #fff;
-	padding: 10px;
 }
 
 .gradient {
