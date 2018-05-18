@@ -190,3 +190,25 @@ h2 {
 	align-self: center;
 	vertical-align: baseline;
 }
+
+.font-expo {
+	text-align: center;
+}
+
+.orbitron {
+    font-family: 'Orbitron', sans-serif;
+	font-size: 50px;
+}
+.just-another-hand {
+    font-family: 'Just Another Hand', cursive;
+	font-size: 75px;
+}
+.serif {
+    font-family: serif;
+	font-size: 58px;
+}
+.sans-serif {
+	font-family: sans-serif;
+	font-size: 50px;
+}
+
