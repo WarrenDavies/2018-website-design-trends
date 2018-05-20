@@ -251,3 +251,43 @@ h3 {
 .right-align {
 	text-align: right;
 }
+
+.to-reveal {
+	-webkit-transition: all 1s;
+    -moz-transition: all 1s;
+    -o-transition: all 1s;
+    transition: all 1s;
+	opacity: 0;
+}
+
+.revealed {
+	opacity: 1;
+}
+
+.to-raise {
+	-webkit-transition: all 1s;
+    -moz-transition: all 1s;
+    -o-transition: all 1s;
+    transition: all 1s;
+	margin-top: 150px;
+	opacity: 0;
+}
+
+.raised {
+	margin-top: 20px;
+	opacity: 1;
+}
+
+.to-slide {
+	-webkit-transition: all 1s;
+    -moz-transition: all 1s;
+    -o-transition: all 1s;
+    transition: all 1s;
+	margin-top: 150px;
+	opacity: 0;
+}
+
+.slided {
+	margin-top: 20px;
+	opacity: 1;
+}
