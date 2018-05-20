@@ -2,6 +2,8 @@ body {
 	font-family: Helvetica;
 }
 
+/* Headers */
+
 h1 {
 	font-family: Palatino;
 	font-size: 68px;
@@ -18,6 +20,14 @@ h2 {
 	text-align: center;
 	font-style: italic;
 	margin: 100px 0px;
+}
+
+h3 {
+	font-family: Helvetica;
+	font-size: 58px;
+	font-weight: bold;
+	margin: 0px;
+	padding: 35px;
 }
 
 .big-number {
@@ -46,12 +56,37 @@ h2 {
 	font-weight: bold;
 }
 
+/* Containers */
+
 .wide-box {
 	display: flex;
 	width: 100%;
 	margin: 0px auto;
 	height: 600px;
 	align-items: center;
+}
+
+.wide-box--center {
+	width: 90%;
+	max-width: 800px;
+	height: auto;
+	position: relative;
+}
+
+.narrow-box {
+	position: relative;
+	display: block;
+	width: 100%;
+	max-width: 800px;
+	margin: 0px auto;
+}
+
+.thin-box {
+	position: relative;
+	display: block;
+	width: 100%;
+	max-width: 500px;
+	margin: 0px auto;
 }
 
 .color-box {
@@ -96,14 +131,6 @@ h2 {
 	color: white;
 }
 
-.narrow-box {
-	position: relative;
-	display: block;
-	width: 100%;
-	max-width: 800px;
-	margin: 0px auto;
-}
-
 .center-text-inverse {
 	background: black;
 	color: white;
@@ -125,6 +152,8 @@ h2 {
 	width: 35%;
 	padding: 0px;
 }
+
+/* "Elements not lining up" secion */
 
 .left-text-underline {
 	position: relative;
@@ -150,12 +179,7 @@ h2 {
 	left: 35%;
 }
 
-.wide-box--center {
-	width: 90%;
-	max-width: 800px;
-	height: auto;
-	position: relative;
-}
+/* "Monochrome images" section */
 
 .london {
 	width: 100%;
@@ -191,6 +215,8 @@ h2 {
 	vertical-align: baseline;
 }
 
+/* "Fonts" section */
+
 .font-expo {
 	text-align: center;
 }
@@ -212,3 +238,16 @@ h2 {
 	font-size: 50px;
 }
 
+/* "Animate literally everything" secion*/
+
+.left-align {
+	text-align: left;
+}
+
+.center-align {
+	text-align: center;
+}
+
+.right-align {
+	text-align: right;
+}
