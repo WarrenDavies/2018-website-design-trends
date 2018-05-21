@@ -71,6 +71,7 @@ var _requestAnimationFrame = window.requestAnimationFrame || window.webkitReques
 	
 var toAnimate = document.querySelectorAll('.to-raise');
 var toReveal = document.querySelectorAll('.to-reveal');
+var toSlide = document.querySelectorAll('.to-slide');
 
 var getViewportSize = function() {
   return {
@@ -123,8 +124,7 @@ var getViewportPosition = function() {
     var toggleElement = function() {
 	
 	var toAnimate = document.querySelectorAll('.to-raise');
-
-		for (var i = 0; i < toAnimate.length; i++) {
+  	for (var i = 0; i < toAnimate.length; i++) {
 			if (checkVisibility(toAnimate[i])) {
 				toAnimate[i].classList.add('raised');
 			} 
@@ -135,8 +135,19 @@ var getViewportPosition = function() {
 			if (checkVisibility(toReveal[i])) {
 				toReveal[i].classList.add('revealed');
 			} 
-		}
+    }
+    
+    var toSlide = document.querySelectorAll('.to-slide');
+		for (var i = 0; i < toReveal.length; i++) {
+			if (checkVisibility(toReveal[i])) {
+				toSlide[i].classList.add('slid');
+			} 
+    }
+    
     };
+
+    
+    
 
     // Throttle events and requestAnimationFrame
     var scrollHandler = throttle(function() {
