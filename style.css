@@ -240,6 +240,11 @@ h3 {
 
 /* "Animate literally everything" secion*/
 
+.animate-expo {
+	overflow: hidden;
+	min-height: 400px;
+}
+
 .left-align {
 	text-align: left;
 }
@@ -253,10 +258,11 @@ h3 {
 }
 
 .to-reveal {
-	-webkit-transition: all 1s;
-    -moz-transition: all 1s;
-    -o-transition: all 1s;
-    transition: all 1s;
+	position: absolute;
+	-webkit-transition: all 3s;
+    -moz-transition: all 3s;
+    -o-transition: all 3s;
+    transition: all 3s;
 	opacity: 0;
 }
 
@@ -265,31 +271,73 @@ h3 {
 }
 
 .to-raise {
-	-webkit-transition: all 2s;
-    -moz-transition: all 2s;
-    -o-transition: all 2s;
-	transition: all 2s;
-	
-	margin-top: 100px;
+	position: absolute;
+	top: 50%;
 	opacity: 0;
 }
 
 .raised {
-	margin-top: 20px;
-	opacity: 1;
+	animation: raise-and-reveal 2s forwards 1.5s;
 }
 
+@keyframes raise-and-reveal {
+	0% {
+	  opacity: 0;
+	  top: 50%;
+	}
+	50% {
+	  opacity: 0.5;
+	}
+	100% {
+	  opacity: 1;
+	  top: 25%;
+	}
+  }
+
 .to-slide {
-	-webkit-transition: all 3s;
-    -moz-transition: all 3s;
-    -o-transition: all 3s;
-    transition: all 3s;
-	position: relative;
+	position: absolute;
+	top: 50%;
 	opacity: 0;
 	left: -300px;
 }
 
 .slid {
-	opacity: 1;
-	left: 0;
+	animation: slide-in-and-reveal 2s forwards 3s;
 }
+
+@keyframes slide-in-and-reveal {
+	0% {
+	  opacity: 0;
+	  left: -300px;
+	}
+	50% {
+	  opacity: 0.5;
+	}
+	100% {
+	  opacity: 1;
+	  left: 0;
+	}
+  }
+
+.slid span.hinge {
+	animation: rotate-letter 0.1s forwards 5.5s;
+	display: inline-block;
+	transform-origin: 10% 0%;
+}
+
+@keyframes rotate-letter {
+	0% {
+		transform: rotate(0deg);
+		-webkit-transform: rotate(0deg);
+		-moz-transform: rotate(0deg);
+		-ms-transform: rotate(0deg);
+
+	}
+	100% {
+		transform: rotate(30deg);
+		-webkit-transform: rotate(30deg);
+		-moz-transform: rotate(30deg);
+		-ms-transform: rotate(30deg);
+	}
+  }
+
