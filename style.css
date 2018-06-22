@@ -131,6 +131,7 @@ h3 {
 
 .gradient {
 	height: 400px;
+	display: flex;
 	flex-direction: column;
 	justify-content: space-evenly;
 	background: linear-gradient(to bottom right, #ff1493, #BF00FF);
@@ -144,6 +145,8 @@ h3 {
 	color: white;
 }
 
+/* "Elements not lining up" section */
+
 .center-text-inverse {
 	background: black;
 	color: white;
@@ -152,6 +155,7 @@ h3 {
 	padding: 10px;
 	margin: 0px auto;
 	width: 30%;
+	min-width: 300px;
 }
 
 .right-text-black {
@@ -165,8 +169,6 @@ h3 {
 	width: 35%;
 	padding: 0px;
 }
-
-/* "Elements not lining up" secion */
 
 .left-text-underline {
 	position: relative;
@@ -190,6 +192,7 @@ h3 {
 	position: relative;
 	width: 23%;
 	left: 35%;
+	min-width: 180px;
 }
 
 /* "Monochrome images" section */
